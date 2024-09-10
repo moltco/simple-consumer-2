@@ -8,7 +8,10 @@ export default function Home() {
   };
 
   const importedClass = new ExportedClass(msg);
-  console.log(importedClass.toExportString());
+  const output =
+    importedClass.toExportString() + Math.floor(Math.random() * 100).toString();
 
-  return null;
+  console.log(output);
+
+  return output;
 }
